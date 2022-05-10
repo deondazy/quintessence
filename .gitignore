@@ -1,0 +1,7 @@
+/.DS_Store
+/composer.lock
+/config.php
+/quintessence.dev.code-workspace
+/vendor
+/error_log
+/error.log

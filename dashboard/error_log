@@ -1,0 +1,789 @@
+[08-Oct-2021 21:44:24 Africa/Lagos] PHP Notice:  Undefined property: QF\Core\Database::$pdo in /home/alnalneh/facepare.com/demo/core/Database.php on line 141
+[08-Oct-2021 21:44:24 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: invalid data source name in /home/alnalneh/facepare.com/demo/core/Database.php on line 103 <br> #0 /home/alnalneh/facepare.com/demo/core/Database.php(103): PDO->__construct('', NULL, NULL, Array)
+#1 /home/alnalneh/facepare.com/demo/core/Database.php(141): QF\Core\Database->connect(NULL)
+#2 /home/alnalneh/facepare.com/demo/core/Base.php(95): QF\Core\Database->query('SELECT * FROM c...')
+#3 /home/alnalneh/facepare.com/demo/dashboard/get-chat.php(6): QF\Core\Base->getAll()
+#4 {main} <br> 0 in /home/alnalneh/facepare.com/demo/core/Database.php:105
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(141): QF\Core\Database->connect(NULL)
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(95): QF\Core\Database->query('SELECT * FROM c...')
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-chat.php(6): QF\Core\Base->getAll()
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 105
+[09-Oct-2021 08:56:30 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:34 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:39 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:44 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:49 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:54 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:56:59 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:04 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:09 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:14 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:19 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:24 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:29 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:34 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:39 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:44 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:49 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:54 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:57:59 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:04 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:09 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:19 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:24 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:29 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:34 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:39 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:44 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:49 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:54 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:58:59 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:05 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:09 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:14 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:19 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:24 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:30 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:34 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 08:59:39 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:00:00 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:01:02 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:02:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:03:02 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:04:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:05:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:06:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:07:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:08:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:09:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:10:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:11:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:12:02 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:13:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[09-Oct-2021 09:21:01 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:31:17 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:32:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:33:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:34:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:35:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:36:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:37:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:38:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:39:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:40:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:41:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:42:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:43:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:44:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:45:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:46:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:47:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:48:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:49:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:50:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:51:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:52:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:53:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:54:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:55:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:56:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:57:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:58:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 20:59:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:00:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:01:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:02:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:03:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:04:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:05:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:06:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:07:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:08:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:09:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:10:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:11:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:12:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:13:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:14:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:15:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:16:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:17:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:18:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:19:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:20:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:21:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:22:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:23:15 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:24:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:25:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:26:16 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203
+[12-Oct-2021 21:26:26 Africa/Lagos] PHP Fatal error:  Uncaught QF\Core\Exception\DatabaseException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY last_login DESC' at line 1 in /home/alnalneh/facepare.com/demo/core/Database.php:203
+Stack trace:
+#0 /home/alnalneh/facepare.com/demo/core/Database.php(214): QF\Core\Database->execute()
+#1 /home/alnalneh/facepare.com/demo/core/Base.php(97): QF\Core\Database->fetchAll()
+#2 /home/alnalneh/facepare.com/demo/dashboard/get-users.php(13): QF\Core\Base->getAll('id != ', 'last_login DESC')
+#3 {main}
+  thrown in /home/alnalneh/facepare.com/demo/core/Database.php on line 203

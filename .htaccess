@@ -1,0 +1,58 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} ^quintessence.com [NC]
+#RewriteRule ^(.*)$ https://www.quintessence.com/$1 [L,R=301]
+
+# FORCE SSL
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+# 404 PAGE
+ErrorDocument 404 /404.php
+
+RewriteRule ^about/*$ ./about.php
+
+RewriteRule ^activate/*$ ./activate.php
+RewriteRule ^activate/([a-zA-Z0-9]+)/*$ ./activate.php?key=$1
+RewriteRule ^reset/([a-zA-Z0-9]+)/*$ ./reset.php?key=$1
+
+# Dashboard Links
+RewriteRule ^dashboard/auth/register/*$ ./dashboard/auth/register.php
+RewriteRule ^dashboard/auth/login/*$ ./dashboard/auth/login.php
+RewriteRule ^dashboard/auth/logout/*$ ./dashboard/auth/logout.php
+RewriteRule ^dashboard/auth/forgot-password/*$ ./dashboard/auth/forgot-password.php
+RewriteRule ^dashboard/profile/*$ ./dashboard/profile.php
+
+</IfModule>
+
+<IfModule mod_expires.c>
+  #ExpiresActive On
+
+  # Images
+  #ExpiresByType image/jpeg "access plus 1 year"
+  #ExpiresByType image/gif "access plus 1 year"
+  #ExpiresByType image/png "access plus 1 year"
+  #ExpiresByType image/webp "access plus 1 year"
+  #ExpiresByType image/svg+xml "access plus 1 year"
+  #ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  #ExpiresByType video/mp4 "access plus 1 year"
+  #ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  #ExpiresByType text/css "access plus 1 month"
+  #ExpiresByType text/javascript "access plus 1 month"
+  #ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  #ExpiresByType application/pdf "access plus 1 month"
+  #ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>

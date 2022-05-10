@@ -1,0 +1,29 @@
+{
+    "name": "quintessence/quintessence",
+    "description": "Quintessence Fraternity Official Website",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Smith",
+            "email": "willismith@zoho.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.x-dev",
+        "sunra/php-simple-html-dom-parser": "1.5.2",
+        "sonata-project/google-authenticator": "^1.1",
+        "geoip2/geoip2": "~2.0",
+        "mailgun/mailgun-php": "^2.8",
+        "php-http/message": "^1.7",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.5",
+        "html2text/html2text": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "QF\\Core\\": "core/",
+            "QF\\Core\\Exception\\": "core/exception/"
+        }
+    }
+}

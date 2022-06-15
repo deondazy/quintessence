@@ -21,19 +21,16 @@ if ($user->get('paid', $user->currentUserId())) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    // TODO: Remove this line
-    //Util::redirect($site->url . '/dashboard/auth/payment/');
-
     // Pay 25k
     $email = $user->get('email', $user->currentUserId());
-    $secretKey = $config->payment->paystack_api_test_key;
+    $secretKey = $config->payment->paystack_api_live_key;
 
     // creating the transaction object
     $Transaction = new Transaction($secretKey);
 
     // Set data to post using this method
     $response = $Transaction
-                ->setCallbackUrl('https://quintessence.dev:8890/dashboard/auth/payment-callback.php')
+                ->setCallbackUrl('https://quintessenceng.com/dashboard/auth/payment-callback.php')
                 ->setEmail($email)
                 ->setAmount(25000) // amount is treated in Naira while using this method
                 ->initialize([], true);
@@ -51,8 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 include __DIR__ . '/header.php';
 ?>
-
-
 	<!-- Page container -->
 	<div class="page-container">
 
@@ -72,8 +67,6 @@ include __DIR__ . '/header.php';
 								<div class="icon-object border-slate-300 text-slate-300"><i class="icon-credit-card2"></i></div>
 								<h5 class="content-group">Make payment to access the dashboard</h5>
 							</div>
-
-
 							<div class="form-group">
 								<button type="submit" class="btn btn-primary btn-block">Pay ₦25,000.00 <i class="icon-circle-right2 position-right"></i></button>
 							</div>
@@ -81,6 +74,5 @@ include __DIR__ . '/header.php';
 						</div>
 					</form>
 					<!-- /simple login form -->
-
 
 					<?php include __DIR__ . '/footer.php'; ?>

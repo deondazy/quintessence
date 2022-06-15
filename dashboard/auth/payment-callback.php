@@ -11,7 +11,7 @@ use QF\Core\Util;
 
 require __DIR__ . '/../../bootstrap.php';
 
-$secretKey = $config->payment->paystack_api_test_key;
+$secretKey = $config->payment->paystack_api_live_key;
 
 // creating the transaction object
 $Transaction = new Transaction($secretKey);

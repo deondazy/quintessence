@@ -52,6 +52,7 @@ class User extends Base
 
         $return['hash'] = $sessiondata['hash'];
         $return['expire'] = $sessiondata['expire'];
+        $return['user_id'] = $user->id;
 
         return $return;
     }
@@ -83,8 +84,16 @@ class User extends Base
             return false;
         }
 
+        // Check if email already exists
         if ($this->getByEmail($email)) {
             $this->error[] = "Email is taken";
+
+            return false;
+        }
+
+        // Check if phone number already exists
+        if ($this->getByPhoneNumber($params['phone'])) {
+            $this->error[] = "Phone number is taken";
 
             return false;
         }
@@ -139,7 +148,7 @@ class User extends Base
      *
      * @return boolean
     */
-    protected function addRequest($user_id, $email, $type, &$sendmail)
+    protected function addRequest($user_id, $email, $type, &$sendmail, $firstName)
     {
         global $config;
 
@@ -158,7 +167,7 @@ class User extends Base
             $currentdate = time();
 
             if ($currentdate < $expiredate) {
-                $this->error[] = "A reset request already exists.";
+                $this->error[] = "A request already exists, check your email.";
                 return false;
             }
 
@@ -171,7 +180,7 @@ class User extends Base
             return false;
         }
 
-        $key = Util::getRandomString(6);
+        $key = Util::getRandomInt(6);
         $expire = $config->site->request_expire;
 
         $query = Database::instance()->query("INSERT INTO {$config->database_tables->requests} (user_id, request_key, expire, type) VALUES (?, ?, ?, ?)");
@@ -190,9 +199,11 @@ class User extends Base
             $domain = $config->mail->domain;
 
             if ($type == "activation") {
-                $emailBody = file_get_contents(__DIR__ . '/../emails/activate.html');
+                $emailBody = file_get_contents(__DIR__ . '/../emails/email-verify.html');
+
+                $emailBody = str_replace('{user}', $firstName, $emailBody);
                 $emailBody = str_replace('{code}', $key, $emailBody);
-                $emailBody = str_replace('{code2}', $key, $emailBody);
+                $emailBody = str_replace('{email}', $email, $emailBody);
 
                 $html = new \Html2Text\Html2Text($emailBody);
 
@@ -231,6 +242,33 @@ class User extends Base
         }
 
         return true;
+    }
+
+    /**
+     * Resend activation email
+     * 
+     * @param string $email
+     * @param bool $sendmail = NULL
+     * 
+     * @return bool
+     */
+    public function resendActivation($email, $sendmail = NULL)
+    {
+        $user = $this->getByEmail($email);
+
+        if (!$user) {
+            $this->error[] = "Email address is not registered";
+
+            return false;
+        }
+
+        if ($user->is_active == 1) {
+            $this->error[] = "Account is already activated";
+
+            return false;
+        }
+
+        return $this->addRequest($user->id, $email, "activation", $sendmail, $user->first_name);
     }
 
     /**
@@ -398,7 +436,7 @@ class User extends Base
         $email = Util::escape(strtolower($email));
 
         if ($sendmail) {
-            $addRequest = $this->addRequest($userId, $email, "activation", $sendmail);
+            $addRequest = $this->addRequest($userId, $email, "activation", $sendmail, $firstName = $params['first_name']);
 
             if (!$addRequest) {
                 $query = Database::instance()->query("DELETE FROM {$this->table} WHERE id = ?");
@@ -535,6 +573,20 @@ class User extends Base
         global $config;
 
         return (isset($_COOKIE[$config->cookie->login['name']]) && $this->checkSession($_COOKIE[$config->cookie->login['name']]));
+    }
+
+    /**
+     * Checks if a user account is active.
+     * 
+     * @param int $userId
+     * 
+     * @return bool
+     */
+    public function isActive($userId)
+    {
+        $user = $this->getById($userId);
+
+        return $user->is_active;
     }
 
     public function addCookie($hash, $expire)
@@ -793,6 +845,26 @@ class User extends Base
         Database::instance()->bind(':email', $email);
         Database::instance()->execute();
 
+
+        if (Database::instance()->rowCount() == 0) {
+            return false;
+        }
+
+        return Database::instance()->fetchAll()[0];
+    }
+
+    /**
+     * Get user data by phone number
+     * 
+     * @param string $phone
+     * 
+     * @return bool|object
+     */
+    public function getByPhoneNumber($phone)
+    {
+        Database::instance()->query("SELECT * FROM {$this->table} WHERE phone = :phone");
+        Database::instance()->bind(':phone', $phone);
+        Database::instance()->execute();
 
         if (Database::instance()->rowCount() == 0) {
             return false;

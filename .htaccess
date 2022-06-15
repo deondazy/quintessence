@@ -28,7 +28,11 @@ RewriteRule ^dashboard/auth/register/*$ ./dashboard/auth/register.php
 RewriteRule ^dashboard/auth/login/*$ ./dashboard/auth/login.php
 RewriteRule ^dashboard/auth/logout/*$ ./dashboard/auth/logout.php
 RewriteRule ^dashboard/auth/forgot-password/*$ ./dashboard/auth/forgot-password.php
-RewriteRule ^dashboard/profile/*$ ./dashboard/profile.php
+RewriteRule ^dashboard/auth/verify/*$ ./dashboard/auth/verify.php
+RewriteRule ^dashboard/auth/payment/*$ ./dashboard/auth/payment.php
+RewriteRule ^dashboard/settings/*$ ./dashboard/settings.php
+RewriteRule ^dashboard/main/*$ ./dashboard/main.php
+RewriteRule ^dashboard/chat/*$ ./dashboard/chat.php
 
 </IfModule>
 

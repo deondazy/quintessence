@@ -35,7 +35,7 @@
 	<div class="navbar navbar-inverse">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="<?php echo $site->url; ?>">
-                <h1 style="margin:0;">LOGO</h1>
+                <img src="<?php echo $site->url; ?>/images/logo/logo_white.svg" alt="<?php echo $site->name; ?>" width="100">
             </a>
 		</div>
 	</div>

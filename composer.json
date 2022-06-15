@@ -18,7 +18,8 @@
         "php-http/message": "^1.7",
         "php-http/curl-client": "^1.7",
         "guzzlehttp/psr7": "^1.5",
-        "html2text/html2text": "^4.2"
+        "html2text/html2text": "^4.2",
+        "matscode/paystack": "^1.9"
     },
     "autoload": {
         "psr-4": {

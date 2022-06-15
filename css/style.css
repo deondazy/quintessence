@@ -295,9 +295,8 @@ nav.navbar {
 	transform:translateX(-50%);
 }
 .navbar-brand {
-    height: 70px;
-    line-height: 70px;
-    padding: 0 20px 0 0;
+    height: 100px;
+    padding: 10px 20px 10px 0;
 }
 .header-sticky a {
 	transition: all ease 0.35s;
@@ -306,17 +305,16 @@ a.navbar-brand.sticky-logo, .header-sticky a.navbar-brand.primary-logo {
     height: 0;
     width: 0;
     opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 .header-sticky a.navbar-brand.sticky-logo, a.navbar-brand.primary-logo {
-    height: auto;
     width: auto;
     opacity: 1;
-    visibility: visible;
+    display: block;
 }
 .nav.navbar-nav > li > a {
-	height:70px;
-	line-height:70px;
+	height:100px;
+	line-height:100px;
 	padding:0 15px;
 	color:#fff;
 	font-size: 14px;
@@ -486,15 +484,13 @@ header {
 .navbar-sticky.header-sticky .navbar-brand,
 .navbar-sticky.header-sticky .nav.navbar-nav > li > a,
 .navbar-sticky.header-sticky .navbar-nav.navbar-social > li > a > i {
-    height: 60px;
-    line-height: 60px;
+    height: 100px;
 }
 .navbar-brand img {
 	max-height:100%;
 	vertical-align:middle;
 	padding:0;	
 	display:inline-block;	
-	width:auto;
 }
 /* Header/Sliding Part Styles */
 .header-content .header-content-inner {

@@ -5,7 +5,7 @@ require __DIR__ . '/../bootstrap.php';
 $chat = new QF\Core\Chat;
 
 
-$message = QF\Core\Util::escape($_POST['message']);
+$message = $_POST['message'];
 $userId = QF\Core\Util::escape($_POST['incoming_id']);
 
 /*if (empty($message)) {

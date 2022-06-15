@@ -24,6 +24,10 @@ if ("POST" == $_SERVER["REQUEST_METHOD"]) {
     $login = $user->login($email, $password);
 
     if ($login) {
+        if (!$user->isActive($login['user_id'])) {
+            Util::redirect($site->url . '/dashboard/auth/verify/');
+        }
+        
         $user->addCookie($login["hash"], $login["expire"]);
 
         // Redirect after login
@@ -57,6 +61,7 @@ include __DIR__ . '/header.php';
 								<h5 class="content-group">Login to your account</h5>
 								<?php
 								Util::flash('logout');
+                                Util::flash('success');
 								
 								if (isset($user->error)) {
 									foreach ($user->error as $error) {

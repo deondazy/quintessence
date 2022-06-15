@@ -49,7 +49,7 @@ require __DIR__ . '/bootstrap.php';
         <div class="page-loader"></div>
         
         <div class="main-wrap">
-        
+
             <!-- Fixed Navbar -->
             <nav class="navbar navbar-sticky navbar-transparent">
                 <!-- Navbar Transparent Class: navbar-transparent -->
@@ -61,9 +61,14 @@ require __DIR__ . '/bootstrap.php';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand primary-logo" href="<?php echo $site->url; ?>/"><h1 style="color:#fff">LOGO</h1></a>
-                        <a class="navbar-brand sticky-logo" href="<?php echo $site->url; ?>/"><h1 style="color:#fff;">LOGO</h1></a>
+                        <a class="navbar-brand primary-logo" href="<?php echo $site->url; ?>/">
+                            <img src="<?php echo $site->url; ?>/images/logo/logo_white.svg" alt="<?php echo $site->name; ?>" width="100">
+                        </a>
+                        <a class="navbar-brand sticky-logo" href="<?php echo $site->url; ?>/">
+                            <img src="<?php echo $site->url; ?>/images/logo/logo_white.svg" alt="<?php echo $site->name; ?>" width="100">
+                        </a>
                     </div>
+
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
@@ -79,6 +84,7 @@ require __DIR__ . '/bootstrap.php';
                 </div>
                 <!-- /.container-fluid -->
             </nav>
+            
             <!-- Theme Header Start -->
             <header id="home" class="full-height bg-img" data-src="<?php echo $site->url; ?>/images/bg/main-demo.jpg">
                 <div class="overlay"></div>

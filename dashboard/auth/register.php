@@ -7,6 +7,7 @@ if (!session_id()) {
 }
 
 use QF\Core\Util;
+use Mailgun\Mailgun;
 
 require __DIR__ . '/../../bootstrap.php';
 
@@ -30,8 +31,6 @@ if ("POST" == $_SERVER["REQUEST_METHOD"]) {
         Util::flash('error', 'All fields are required', 'alert alert-danger alert-styled-left');
         Util::redirect($site->url . '/dashboard/auth/register/');
     }
-    
-    
 
     $register = $user->register($email, $password, [
         "register_date" => $timeNow, 
@@ -39,14 +38,26 @@ if ("POST" == $_SERVER["REQUEST_METHOD"]) {
         "last_name"     => $lastName,
         "phone"         => $phone,
         "last_login"    => time(),
-    ]);
+    ], true);
 
     if ($register) {
-        // TODO: Send Email Verification
-        
-        $user->addCookie($register["hash"], $register["expire"]);
+        // Check configuration for SMTP parameters
+        $mgClient = new Mailgun($config->mail->mailgun_api_key);
 
-        Util::redirect($site->url . '/dashboard/');
+        // Email admin for new registration
+        $adminEmailBody = "New user {$firstName} {$lastName} just registered an account";
+        $adminHtml = new \Html2Text\Html2Text($adminEmailBody);
+        $adminEmailTxt = $adminHtml->getText();
+
+        $mgClient->sendMessage($config->mail->domain, [
+            'from' => "{$config->site->name} <{$config->site->noreply_email}>",
+            'to' => "{$config->site->email}",
+            'subject' => 'New registration',
+            'text' => $adminEmailTxt,
+            'html' => $adminEmailBody,
+        ]);
+
+        Util::redirect($site->url . '/dashboard/auth/verify/');
     } else {
         if (!empty($user->error)) {
             foreach ($user->error as $error) {

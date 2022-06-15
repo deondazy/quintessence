@@ -30,7 +30,7 @@ $config->site = [
     'name'             => 'Quintessence Fraternity',
     'url'              => '',
     'desc'             => 'Quintessence Fraternity Official Website',
-    'key'              => 'BtGKOhySDpPn65TRBFCm',
+    'key'              => '',
     'phone'            => '',
     'email'            => '', // Email address to send emails to
     'security_email'   => '', // Email address to send security emails to   
@@ -50,7 +50,7 @@ $config->cookie = [
     ],
     '_2fa' => [
         'name' => 'qf_2fa_auth', 
-        'secret' => '1qw23ddf4SDNMAA09IUyT_',
+        'secret' => '',
         'expire' => strtotime('+30 days'),
     ]
 ];
@@ -59,4 +59,10 @@ $config->cookie = [
 $config->mail = [
     'mailgun_api_key' => '',
     'domain'          => '',
+];
+
+// Paystack keys
+$config->payment = [
+    'paystack_api_live_key' => '',
+    'paystack_api_test_key' => '',
 ];

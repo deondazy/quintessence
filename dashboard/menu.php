@@ -11,7 +11,7 @@
 $memberMenu[1] = ['Overview', '', 'icon-meter-fast'];
 $memberMenu[2] = ['Group chat', 'chat/', 'icon-bubbles2'];
 // $memberMenu[3] = ['Messages', 'messages/', 'icon-envelop5'];
-// $memberMenu[4] = ['Gallery', 'gallery/', 'icon-stack-picture'];
+$memberMenu[4] = ['Gallery', 'gallery/', 'icon-stack-picture'];
 $memberMenu[5] = ['Settings', 'settings/', 'icon-cog2'];
 ?>
 

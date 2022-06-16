@@ -4638,7 +4638,9 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 
 .thumb {
     position: relative;
-    display: block
+    display: block;
+    max-height: 178px;
+    overflow: hidden;
 }
 
 .thumb img:not(.media-preview) {

@@ -33,6 +33,7 @@ RewriteRule ^dashboard/auth/payment/*$ ./dashboard/auth/payment.php
 RewriteRule ^dashboard/settings/*$ ./dashboard/settings.php
 RewriteRule ^dashboard/main/*$ ./dashboard/main.php
 RewriteRule ^dashboard/chat/*$ ./dashboard/chat.php
+RewriteRule ^dashboard/gallery/*$ ./dashboard/gallery.php
 
 </IfModule>
 
